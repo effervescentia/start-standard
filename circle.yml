@@ -5,13 +5,13 @@ dependencies:
   cache_directories:
     - ~/.cache/yarn
   pre:
-    - nvm install 6.9
-    - nvm install 7.4
+    - nvm install 6
+    - nvm install 7
   override:
-    - nvm use 6.9 && yarn
+    - nvm use 6 && yarn
 test:
   override:
-    - nvm use 6.9 && yarn start ci
-    - nvm use 7.4 && yarn start ci
+    - nvm use 6 && yarn start ci
+    - nvm use 7 && yarn start ci
   post:
     - yarn run semantic-release || true
