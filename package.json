@@ -1,6 +1,6 @@
 {
   "name": "start-standard",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Standard Style checker for Start",
   "keywords": [
     "start",
@@ -20,7 +20,8 @@
   "scripts": {
     "start": "start-runner -p start-start-preset",
     "prepush": "yarn start prepush",
-    "prepublish": "yarn start build"
+    "prepublish": "yarn start build",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "engines": {
     "node": ">=4"
@@ -43,6 +44,7 @@
     "husky": "^0.13.0",
     "start-babel-cli": "^4.0.1",
     "start-start-preset": "^3.0.1",
-    "tape": "^4.6.3"
+    "tape": "^4.6.3",
+    "semantic-release": "^6.3.2"
   }
 }
