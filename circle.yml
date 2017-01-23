@@ -4,17 +4,18 @@ machine:
 dependencies:
   cache_directories:
     - ~/.cache/yarn
+  pre:
+    - nvm install 7.0
   override:
     - yarn
 test:
   override:
-    - nvm use 4.0 && yarn start ci
-    - nvm use 6.0 && yarn start ci
+    - nvm use 4.5 && yarn start ci
+    - nvm use 6.1 && yarn start ci
     - nvm use 7.0 && yarn start ci
 deployment:
   release:
     tag: /v[0-9]+(\.[0-9]+)*/
     commands:
       - echo "//registry.npmjs.org/:_authToken=${NPM_API_KEY}" > ~/.npmrc
-      - yarn start build
       - yarn publish
