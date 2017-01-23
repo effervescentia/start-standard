@@ -18,5 +18,3 @@ deployment:
       - echo "//registry.npmjs.org/:_authToken=${NPM_API_KEY}" > ~/.npmrc
       - yarn start build
       - yarn publish
-matrix:
-  fast_finish: true
