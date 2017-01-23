@@ -7,12 +7,11 @@ dependencies:
   pre:
     - nvm install 6.9
     - nvm install 7.4
-    - nvm use 6.9
   override:
-    - yarn
+    - nvm use 6.9 && yarn
 test:
   override:
-    - yarn start ci
+    - nvm use 6.9 && yarn start ci
     - nvm use 7.4 && yarn start ci
   post:
     - yarn run semantic-release || true
