@@ -4,7 +4,7 @@
 [![linux build](https://img.shields.io/travis/effervescentia/start-standard/master.svg?label=linux&style=flat-square)](https://travis-ci.org/effervescentia/start-standard)
 [![windows build](https://img.shields.io/appveyor/ci/effervescentia/start-standard/master.svg?label=windows&style=flat-square)](https://ci.appveyor.com/project/effervescentia/start-standard)
 [![coverage](https://img.shields.io/codecov/c/github/effervescentia/start-standard/master.svg?style=flat-square)](https://codecov.io/github/effervescentia/start-standard)
-[![deps](https://david-dm.org/effervescentia/start-standard.svg)](https://david-dm.org/effervescentia/start-standard)
+[![deps](https://david-dm.org/effervescentia/start-standard.svg?style=flat-square)](https://david-dm.org/effervescentia/start-standard)
 
 🎏 [Standard Style](http://standardjs.com/) checker for [Start](https://github.com/start-runner/start)
 
