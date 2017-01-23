@@ -15,4 +15,4 @@ test:
     - nvm use 6.9 && yarn start ci
     - nvm use 7.4 && yarn start ci
   post:
-    - yarn run semantic-release
+    - yarn run semantic-release || true

@@ -23,6 +23,9 @@
     "prepublish": "yarn start build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
+  "release": {
+    "verifyConditions": "condition-circle"
+  },
   "engines": {
     "node": ">=4"
   },
@@ -36,15 +39,16 @@
   },
   "devDependencies": {
     "babel-preset-start": "^0.1.0",
+    "condition-circle": "^1.5.0",
     "eslint": "^3.14.0",
     "eslint-config-semistandard": "^7.0.0",
     "eslint-config-standard": "^6.2.1",
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1",
     "husky": "^0.13.0",
+    "semantic-release": "^6.3.2",
     "start-babel-cli": "^4.0.1",
     "start-start-preset": "^3.0.1",
-    "tape": "^4.6.3",
-    "semantic-release": "^6.3.2"
+    "tape": "^4.6.3"
   }
 }
