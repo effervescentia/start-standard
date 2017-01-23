@@ -1,4 +1,11 @@
 # start-standard
+
+[![npm](https://img.shields.io/npm/v/start-standard.svg?style=flat-square)](https://www.npmjs.com/package/start-standard)
+[![linux build](https://img.shields.io/travis/effervescentia/start-standard/master.svg?label=linux&style=flat-square)](https://travis-ci.org/effervescentia/start-standard)
+[![windows build](https://img.shields.io/appveyor/ci/effervescentia/start-standard/master.svg?label=windows&style=flat-square)](https://ci.appveyor.com/project/effervescentia/start-standard)
+[![coverage](https://img.shields.io/codecov/c/github/effervescentia/start-standard/master.svg?style=flat-square)](https://codecov.io/github/effervescentia/start-standard)
+[![deps](https://img.shields.io/gemnasium/effervescentia/start-standard.svg?style=flat-square)](https://gemnasium.com/effervescentia/start-standard)
+
 🎏 [Standard Style](http://standardjs.com/) checker for [Start](https://github.com/start-runner/start)
 
 ## Install
