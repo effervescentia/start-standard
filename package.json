@@ -46,7 +46,7 @@
   },
   "peerDependencies": {
     "happiness": "^7.1.2",
-    "semistandard": "^9.2.1",
+    "semistandard": "^10.0.0",
     "standard": "^8.6.0"
   },
   "config": {
