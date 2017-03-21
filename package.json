@@ -37,6 +37,10 @@
     "text-table": "^0.2.0"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.18.0",
+    "eslint-config-tough": "^0.4.0",
+    "eslint-plugin-promise": "^3.5.0",
     "start-simple-cli": "^4.1.1",
     "tkstr-devtools": "^1.2.2"
   },

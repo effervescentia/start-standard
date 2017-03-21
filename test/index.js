@@ -1,25 +1,11 @@
-import test from 'tape'
+import { expect } from 'chai';
 
-import task from '../src'
+import task from '../src';
 
-test('basic', (t) => {
-  t.equal(
-    typeof task,
-    'function',
-    '1st function'
-  )
-
-  t.equal(
-    typeof task(),
-    'function',
-    '2nd function'
-  )
-
-  t.equal(
-    typeof task()(),
-    'function',
-    '3rd function'
-  )
-
-  t.end()
-})
+describe('start-standard', () => {
+  it('should return curried functions', () => {
+    expect(task).to.be.a('function');
+    expect(task()).to.be.a('function');
+    expect(task()()).to.be.a('function');
+  });
+});
