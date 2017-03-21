@@ -1,6 +1,6 @@
 import test from 'tape'
 
-import task from '../../lib'
+import task from '../src'
 
 test('basic', (t) => {
   t.equal(

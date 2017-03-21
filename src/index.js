@@ -2,7 +2,7 @@ import { format } from './formatter'
 const STYLES = ['standard', 'semistandard', 'happiness']
 
 export default (style = 'standard', options = {}) => (input) => {
-  return function standard (log) {
+  return function standard(log) {
     if (!(STYLES.includes(style) || style.includes('standard'))) {
       return Promise.reject()
     }
