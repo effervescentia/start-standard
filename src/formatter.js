@@ -1,6 +1,6 @@
 /* eslint-disable no-magic-numbers, no-confusing-arrow, import/prefer-default-export */
-import chalk from 'chalk';
-import table from 'text-table';
+import * as chalk from 'chalk';
+import * as table from 'text-table';
 
 const pluralize = (word, count) => (count === 1 ? word : `${word}s`);
 const joinMessages = (match, p1, p2) => chalk.dim(`${p1}:${p2}`);
