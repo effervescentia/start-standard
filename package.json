@@ -42,7 +42,7 @@
     "eslint": "^3.19.0",
     "eslint-config-tough": "^0.4.0",
     "eslint-plugin-promise": "^3.5.0",
-    "start-babel-cli": "^4.0.1",
+    "start-babel-cli": "4.0.1",
     "tkstr-devtools": "^1.2.2"
   },
   "peerDependencies": {
