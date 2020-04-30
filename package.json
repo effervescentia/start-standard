@@ -20,7 +20,8 @@
   "scripts": {
     "start": "start-runner -p re-start/presets/es6",
     "prepush": "yarn start prepush",
-    "prepublish": "yarn start build"
+    "prepublish": "yarn run snyk-protect && yarn start build",
+    "snyk-protect": "snyk protect"
   },
   "release": {
     "verifyConditions": "condition-circle"
@@ -34,7 +35,8 @@
     "happiness": "^7.1.2",
     "semistandard": "^11.0.0",
     "standard": "^10.0.2",
-    "text-table": "^0.2.0"
+    "text-table": "^0.2.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-preset-latest": "^6.24.1",
@@ -54,5 +56,6 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "snyk": true
 }
